@@ -27,4 +27,4 @@ jobs:
           pip install -r requirements.txt
       # 4. Run linting/test (opsional)
       - name: Run Streamlit hello test
-        run: streamlit hello 
+        run: streamlit hello
