@@ -26,5 +26,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       # 4. Run linting/test (opsional)
-      - name: Run Streamlit hello test
-        run: streamlit hello
+      - name: Test import
+        run: |
+          python - <<EOF
+          import streamlit
+          import tensorflow as tf
+          import numpy as np
+          print("Import OK")
+          EOF
+
