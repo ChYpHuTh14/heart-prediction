@@ -28,4 +28,4 @@ jobs:
 
       # 4. Run linting/test (opsional)
       - name: Run Streamlit hello test
-        run: streamlit hello
+        run: streamlit hello 
